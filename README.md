@@ -1,5 +1,15 @@
 # GetCleanData-Course-Project
 
+The script found in this repo, run_analysis.R, will take the wearable computing data found in 
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip, saved in your work directory in a folder called UCI,
+and will output a summarized data frame that will provide the means of specific variables.
+
+It starts by using the features list as colnames when the X_test.txt and X_train.txt are read.
+It then binds in order the subject_test.txt, y_test.txt and X_test.txt together, and repeats the process for the train data.
+Then, it identifies which variables we want to keep, and removes the those we don't.
+It then renames the activities.
+Finally, the summarised tidy data frame is created and written, providing the mean of every variable for each subject and activity.
+
 The final data frame, tidyDF.txt, is considered tidy in the wide format, as it follows the three rules stated in Hadley Wickam's Tidy Data (http://vita.had.co.nz/papers/tidy-data.pdf).
 
 1. Each variable forms a column.
