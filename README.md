@@ -24,5 +24,5 @@ Activity names were taken straight from the activity_labels.txt file included in
 
 The code needed to look at the final tidy data is
 
-    data <- read.table(file_path, header = TRUE)
+    data <- read.table("tidyDF.txt", header = TRUE)
     View(data)
